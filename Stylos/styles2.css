@@ -1,0 +1,101 @@
+/* estilos/contacto.css */
+
+/* Adaptaciones para el formulario */
+#formulario-contacto {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #2a2a2a; /* Fondo oscuro del formulario */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #eee; /* Color de texto para las etiquetas */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(100% - 20px); /* Ajuste para el padding */
+    padding: 12px;
+    border: 1px solid #555; /* Borde más sutil */
+    border-radius: 5px;
+    background-color: #333; /* Fondo de los campos */
+    color: #eee; /* Color del texto dentro de los campos */
+    font-size: 1rem;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ff8c00; /* Color naranja distintivo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e67e00; /* Naranja más oscuro al pasar el ratón */
+}
+
+/* Estilos para la información de contacto */
+#informacion-contacto {
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.info-item {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-item h3 {
+    color: #ff8c00; /* Naranja para los títulos de información */
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+}
+
+.info-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.info-item a {
+    color: #ff8c00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+    color: #e67e00;
+    text-decoration: underline;
+}
+
+.mapa {
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el mapa se ajuste al borde redondeado */
+}
